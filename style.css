@@ -1,0 +1,223 @@
+@media (min-width:375px) {
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+  display:flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%) ;
+  font-family: "Poppins", sans-serif;;
+}
+.site{
+  display: grid;
+  grid-template-columns: 750px 600px ;
+  grid-template-rows: 650px;
+ 
+}
+.leftSide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title, .description {
+  padding-left: 50px;
+  padding-right: 100px;
+  color: white;
+}
+.title > h1 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55px;
+}
+.description > p{
+  font-size: 19px;
+}
+
+.rightSide{
+  display: flex;
+  flex-direction: column ;
+
+}
+.offer{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 10px;
+  
+}
+.offer > button{
+  width:600px;
+  height: 65px;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  font-size: large;
+  border-radius: 12px;
+  box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
+  
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid ;
+  height:550px;
+  box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
+  
+
+}
+input{
+  width:500px;
+  height:55px;
+  font-size: 19px;
+  border-radius: 12px;
+  border: 2px solid hsl(246, 25%, 77%);
+  text-indent: 35px;
+}
+
+.acceptButton {
+width:510px;
+height:60px;
+border-radius: 12px;
+background-color: hsl(154, 59%, 51%);
+border: 1px hsl(154, 59%, 51%);
+font-size: 16px;
+text-transform: uppercase;
+color: white;
+box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
+}
+
+.termsAgreement{
+  margin-top: -30px;
+  display: inline-flex;
+  font-size: small;
+  gap:5px;
+  color: hsl(246, 25%, 77%);
+}
+.terms{
+  color: orange;
+  font-weight: 600;
+}
+}
+
+
+@media (max-width:375px) {
+  .attribution { font-size: 11px; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+  body{
+    display:flex;
+    height: 100vh;
+    margin: 20px;
+   
+    flex-direction:column;
+    align-items: center;
+    
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+    font-family: "Poppins", sans-serif;;
+  }
+  .site{
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+  }
+  .leftSide{
+    display: flex;
+    width:350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .title, .description {
+    
+    color: white;
+  }
+  .title > h1 {
+    font-size: 35px;
+    font-weight: 700;
+    
+  }
+  .description > p{
+    font-size: 14px;
+  }
+  
+  .rightSide{
+    display: flex;
+    flex-direction: column ;
+    width:360px;
+  
+  }
+  .offer{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 10px;
+    
+  }
+  .offer > button{
+    width:350px;
+    height: 65px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    font-size: large;
+    border-radius: 12px;
+    box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
+    
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid ;
+    height:550px;
+    width:350px;
+    box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
+     
+  }
+  input{
+    width:320px;
+    height:55px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid hsl(246, 25%, 77%);
+    text-indent: 35px;
+  }
+  
+  .acceptButton {
+    width:320px;
+  height:60px;
+  border-radius: 12px;
+  background-color: hsl(154, 59%, 51%);
+  border: 1px hsl(154, 59%, 51%);
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
+  }
+  
+  .termsAgreement{
+    margin-top: -30px;
+    display: inline-flex;
+    font-size: xx-small;
+    gap:5px;
+    color: hsl(246, 25%, 77%);
+  }
+  .terms{
+    color: orange;
+    font-weight: 600;
+  }
+  .footer{
+    
+  }
+}
