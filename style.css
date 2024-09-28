@@ -92,6 +92,9 @@ text-transform: uppercase;
 color: white;
 box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
 }
+.acceptButton:hover{
+  background-color: hsla(154, 59%, 51%, 60%);
+}
 
 .termsAgreement{
   margin-top: -30px;
@@ -101,9 +104,23 @@ box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
   color: hsl(246, 25%, 77%);
 }
 .terms{
+  align-self: center;
   color: orange;
   font-weight: 600;
 }
+}
+
+.empty{
+  border-color: red;
+  background-image: url(./images/icon-error.svg) ;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+.emptyAlert{
+  color: red;
+  font-size: small;
+  text-align: end;
+  margin-bottom: -20px;
 }
 
 
@@ -118,15 +135,14 @@ box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
     flex-direction:column;
     align-items: center;
     
-    background-image: url("./images/bg-intro-desktop.png");
+    background-image: url("./images/bg-intro-mobile.png");
     background-color: hsl(0, 100%, 74%) ;
     font-family: "Poppins", sans-serif;;
   }
   .site{
-    height: 100vh;
-   
     display: flex;
     flex-direction: column;
+    
   }
   .leftSide{
     display: flex;
@@ -195,7 +211,7 @@ box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
   }
   
   .acceptButton {
-    width:320px;
+  width:320px;
   height:60px;
   border-radius: 12px;
   background-color: hsl(154, 59%, 51%);
@@ -214,10 +230,10 @@ box-shadow: 2px 5px 5px hsla(247, 7%, 55%, 70%) ;
     color: hsl(246, 25%, 77%);
   }
   .terms{
+    
     color: orange;
     font-weight: 600;
+    align-self: center;
   }
-  .footer{
-    
-  }
+ 
 }
